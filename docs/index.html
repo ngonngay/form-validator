@@ -31,21 +31,57 @@
       
           <div class="form-group">
             <label for="password" class="form-label">Mật khẩu</label>
-            <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
+            <input id="password" type="password" name="password"  placeholder="Nhập mật khẩu" class="form-control">
             <span class="form-message"></span>
           </div>
       
           <div class="form-group">
-            <label for="password_confirmation" class="form-label">Nhập lại mật khẩu</label>
-            <input id="password_confirmation" name="password_confirmation" placeholder="Nhập lại mật khẩu" type="password" class="form-control">
+            <label for="password_confirmation"  class="form-label">Nhập lại mật khẩu</label>
+            <input id="password_confirmation"type="password" name="password_confirmation" placeholder="Nhập lại mật khẩu"  class="form-control">
+            <span class="form-message"></span>
+          </div> 
+          <div class="form-group">
+            <label for="password_confirmation"  class="form-label">Giới Tính</label>
+            <div>
+              <input name="gender" value="male" type="radio"   class="form-control">
+              Nam
+            </div>
+            <div>
+              <input name="gender" value="female" type="radio"   class="form-control">
+              Nữ
+            </div>
+            <div>
+              <input name="gender" value="other" type="radio"   class="form-control">
+              Khác
+            </div>
             <span class="form-message"></span>
           </div>
       
           <button class="form-submit">Đăng ký</button>
         </form>
-    
+        
       </div>
-
+     
       <script src="./validator.js"></script>
+      <script >
+          Validator({
+            form: '#form-1',
+            formGroupSelector: '.form-group',
+            errorSelector:'.form-message',
+            rules: [
+                Validator.isRequired('#fullname'),
+                Validator.isRequired('#email'),
+                Validator.isRequired('input[name="gender"]'),
+                Validator.isEmail('#email'),
+                // Validator.minLength('#password',6),
+                // Validator.isConfirmed('#password_confirmation',function(){
+                //     return document.querySelector('#password_confirmation').value;
+                // },"Mật Khẩu Nhập Lại không chính xác")
+            ],
+            onSubmit: function(data) {
+              console.log(data);//console.log thì bị bỏ qua
+            }
+          });
+      </script>
 </body>
 </html>
