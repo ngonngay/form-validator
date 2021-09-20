@@ -315,7 +315,7 @@ Compare the string with the value returned from a callback function
 - **getConfirmValue** : function
     - callback function that will return the value in order to compare with selector value
 - **message** : string
-    - error message will be appended to the error element
+    - error message will be appended to the error element\
     Example: 
     ```
      Validator({
