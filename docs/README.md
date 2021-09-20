@@ -14,4 +14,56 @@
 Source code from origin developer [F8-Học để đi làm](https://codepen.io/ng-ngc-sn-the-bashful/pen/wvMNzKP)
 
 # Table of contents
-- [Getting started](#Supported)
+- [Getting started](#GettingStarted)
+
+
+- input[type='text']
+- input[type='password']
+- input[type='file']
+- input[type='radio']
+- input[type='checkbox']
+- input[type='email']
+- select
+- input[type='text']
+- input[type='password']
+- input[type='file']
+- input[type='radio']
+- input[type='checkbox']
+- input[type='email']
+- select
+- input[type='text']
+- input[type='password']
+- input[type='file']
+- input[type='radio']
+- input[type='checkbox']
+- input[type='email']
+- select
+- input[type='text']
+- input[type='password']
+- input[type='file']
+- input[type='radio']
+- input[type='checkbox']
+- input[type='email']
+- select
+- input[type='text']
+- input[type='password']
+- input[type='file']
+- input[type='radio']
+- input[type='checkbox']
+- input[type='email']
+- select
+- input[type='text']
+- input[type='password']
+- input[type='file']
+- input[type='radio']
+- input[type='checkbox']
+- input[type='email']
+- select
+- input[type='text']
+- input[type='password']
+- input[type='file']
+- input[type='radio']
+- input[type='checkbox']
+- input[type='email']
+- select
+# Getting Started
