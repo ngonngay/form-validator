@@ -222,9 +222,9 @@ Otherwise, the form will be submitted according to the method and action declare
 ### Validator.isRequired = function (selector, message) {}
 #### Parameter
    **selector** : string\
-> css selector of the field to check\
+- css selector of the field to check\
    **message** : string\
-> error message will be appended to the error element
+- error message will be appended to the error element
 ## isEmail  Methods
 ### Definition
 - Check if the email the user entered is in email format or not
