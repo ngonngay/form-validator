@@ -15,7 +15,7 @@ Source code from origin developer [F8-Học để đi làm](https://codepen.io/n
 
 # Table of contents
 - [Getting started](#getting-started)
-[Arguments](#arguments)
+- [Arguments](#arguments)
 
 # Getting Started
 Install Validator
@@ -28,25 +28,23 @@ Open /docs/index.html with Live Server or Reveal in File Explorer. You can see i
 For other way,
 Create new form in other index.html.
 Your form should follow this format :
-```
-    <form action="" method="POST" class="form" id="form-id">
-          <div class="form-group">
-            <label for="email" class="form-label">Email</label>
-            <input id="email" name="email" type="text" placeholder="VD: email@domain.com" class="form-control">
-            <span class="form-message"></span>
-          </div>
-          <div class="form-group">
-            <label for="password" class="form-label">Mật khẩu</label>
-            <input id="password" type="password" name="password"  placeholder="Nhập mật khẩu" class="form-control">
-            <span class="form-message"></span>
-          </div>
-      
-          <button class="form-submit">Đăng ký</button>
-    </form>
-``` 
-    - Your form must have separate form-groups for each data field
-    - For unique data fields (eg full-name, email, password,...), input tags should have 'id' attributes for easy search in the DOM
-    - For data groups (eg radio button , checkbox) the tags should have the same 'name' attribute and be placed in a form-group.
+        ```<form action="" method="POST" class="form" id="form-id">
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input id="email" name="email" type="text" placeholder="VD: email@domain.com" class="form-control">
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="form-label">Mật khẩu</label>
+                    <input id="password" type="password" name="password"  placeholder="Nhập mật khẩu" class="form-control">
+                    <span class="form-message"></span>
+                </div>
+                <button class="form-submit">Đăng ký</button>
+            </form>
+        ``` 
+- Your form must have separate form-groups for each data field
+- For unique data fields (eg full-name, email, password,...), input tags should have 'id' attributes for easy search in the DOM
+- For data groups (eg radio button , checkbox) the tags should have the same 'name' attribute and be placed in a form-group.
         ```
             <div class="form-group">
                 <div>
