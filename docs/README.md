@@ -114,5 +114,5 @@ Validator({
     form :"#form-id"
 })
 ```
-**Dont forget * # * (for id) and * . * (for class name ) when pass argument**
+**Dont forget * # * (for id) and * . * (for class name ) when pass argument**\
 **Dont forget this *{ }* when pass argument !**
