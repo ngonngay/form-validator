@@ -13,25 +13,6 @@
 #### Source 
 Source code from origin developer [F8-Học để đi làm](https://codepen.io/ng-ngc-sn-the-bashful/pen/wvMNzKP)
 
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-aa
-a
-a
+# Table of contents
+    - [Getting started](https://github.com/ngonngay/form-validator/blob/develop/docs/README.md#supported)
 #### Source
