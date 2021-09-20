@@ -69,17 +69,18 @@
             formGroupSelector: '.form-group',
             errorSelector:'.form-message',
             rules: [
-                Validator.isRequired('#fullname'),
-                Validator.isRequired('#email'),
-                Validator.isRequired('input[name="gender"]'),
-                Validator.isEmail('#email'),
+                // Validator.isRequired('#fullname'),
+                // Validator.isRequired('#email'),
+                //Validator.isRequired('input[name="gender"]'),
+                // Validator.isEmail('#email'),
                 // Validator.minLength('#password',6),
                 // Validator.isConfirmed('#password_confirmation',function(){
                 //     return document.querySelector('#password_confirmation').value;
                 // },"Mật Khẩu Nhập Lại không chính xác")
+                Validator.hasUpperCase('#password',true),
             ],
             onSubmit: function(data) {
-              console.log(data);//console.log thì bị bỏ qua
+              console.log(data);
             }
           });
       </script>

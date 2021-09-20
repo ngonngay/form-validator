@@ -16,7 +16,21 @@ Source code from origin developer [F8-Học để đi làm](https://codepen.io/n
 # Table of contents
 - [Getting started](#getting-started)
 - [Arguments](#arguments)
-
+    - [form](#form)
+    - [formGroupSelector](#formsroupselector)
+    - [errorSelector](#errorselector)
+    - [rules](#rules)
+    - [onSubmit](#onsubmit)
+- [Method](#rules-method)
+    - [isRequired](#isrequired)
+    - [isEmail](#isemail)
+    - [minLength](#minlength)
+    - [hasSpecialCharacter](#hasspecialcharacter)
+    - [hasNumber](#hasnumber)
+    - [hasNumberOnly](#hasnumberonly)
+    - [hasUpperCase](#hasuppercase)
+    - [hasLowerCaseOnly](#haslowercasecnly)
+    - [isConfirmed](#isconfirmed)
 # Getting Started
 Install Validator
 Clone Code from github 
@@ -103,15 +117,14 @@ Done.
   **(*) is required**
 #### form
 We have form here : 
-```
-    <form action="" method="POST" class="form" id="form-id">
-         
-    </form>
+```                     
+   => <form action="" method="POST" class="form" id="form-id"> 
+    </form>                                             
 ```
 in ```Validator()``` just pass ```#form-id``` to it, like :
 ```
 Validator({
-    form :"#form-id"
+   => form :"#form-id"
 })
 ```
 **Dont forget * # * (for id) and * . * (for class name ) when pass argument**\
@@ -119,7 +132,7 @@ Validator({
 #### formGroupSelector
 This parameter specifies which element the form-group is\
 ```
-    <div class="form-group">
+ =>   <div class="form-group">
         <label for="email" class="form-label">Email</label>
         <input id="email" name="email" type="text" placeholder="VD: email@domain.com" class="form-control">
         <span class="form-message"></span>
@@ -129,7 +142,7 @@ When pass Like:
 ```
 Validator({
     form :"#form-id",
-    formGroupSelector: 'form-group',
+  =>  formGroupSelector: 'form-group',
 })
 ```
 #### errorSelector
@@ -146,13 +159,24 @@ When pass Like:
 Validator({
     form :"#form-id",
     formGroupSelector: 'form-group',
-    errorSelector:'.form-message',
+  =>  errorSelector:'.form-message',
 })
 ```
 **rules** 
 This parameter specifies the rules to be applied to validate the data field\
-A data field can have many rules, for example 'email' has rules like required, isEmail,....\
-Predefined rules:\
+A data field can have many rules, for example 'email' has rules like required, isEmail,....
+```
+ Validator({
+            form: '#form-1',
+            formGroupSelector: '.form-group',
+            errorSelector:'.form-message',
+           => rules: [
+                 Validator.isRequired('#fullname'),
+                Validator.hasUpperCase('#password',true),
+            ],
+          });
+```
+Predefined rules:
 
 | Rule               | Meaning                                        |
 | -------------------------- | ---------------------------------------------- |
@@ -161,4 +185,42 @@ Predefined rules:\
 | minLength      | min length of the target  |
 | hasSpecialCharacter              | has special characters                   |
 | hasNumber               | has number                               |
+| hasNumberOnly               | has number                               |
+| hasUpperCase             | has uppercase   or only upper case                     |
+| hasLowerCaseOnly             | has lowercase only                         |
 | isConfirmed               | compare 2 values                            |
+
+
+**onSubmit** 
+Is an optional callback function\
+This callback will be called when the user clicks on the register button to submit the form\
+When the form is submitted, all the rules will be validated\
+If you pass a callback to onSubmit, the validator will stop the submit event and return the entered data object\
+Otherwise, the form will be submitted according to the method and action declared on the form\
+```
+ Validator({
+            form: '#form-1',
+            formGroupSelector: '.form-group',
+            errorSelector:'.form-message',
+            rules: [
+                 Validator.isRequired('#fullname'),
+                Validator.hasUpperCase('#password',true),
+            ],
+        =>  onSubmit: function(data) {
+            //you can call api here
+            // data is the data entered into the fields. field name will be the name of the input tag
+              console.log(data);
+            }
+          });
+```
+# Rules Methods
+ Predefined rules:
+# isRequired
+# isEmail 
+# minLength
+# hasSpecialCharacter
+# hasNumber
+# hasNumberOnly
+# hasUpperCase
+# hasLowerCaseOnly
+# isConfirmed
