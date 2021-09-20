@@ -316,3 +316,20 @@ Compare the string with the value returned from a callback function
     - callback function that will return the value in order to compare with selector value
 - **message** : string
     - error message will be appended to the error element
+    Example: 
+    ```
+     Validator({
+            form: '#form-1',
+            formGroupSelector: '.form-group',
+            errorSelector:'.form-message',
+            rules: [
+                 Validator.isConfirmed('#password_confirmation',function(){
+                     return document.querySelector('#password_confirmation').value;
+                 },"Mật Khẩu Nhập Lại không chính xác")
+                
+            ],
+            onSubmit: function(data) {
+              console.log(data);
+            }
+          });
+    ```
