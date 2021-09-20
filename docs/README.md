@@ -14,4 +14,4 @@
 Source code from origin developer [F8-Học để đi làm](https://codepen.io/ng-ngc-sn-the-bashful/pen/wvMNzKP)
 
 # Table of contents
-    - [Getting started](##Supported)
+    -[Getting started](##Supported)
