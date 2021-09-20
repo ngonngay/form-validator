@@ -222,16 +222,16 @@ Otherwise, the form will be submitted according to the method and action declare
 ### Validator.isRequired = function (selector, message) {}
 #### Parameter
 - **selector** : string
-- css selector of the field to check\
+    - css selector of the field to check
 - **message** : string
-- error message will be appended to the error element
+    - error message will be appended to the error element
 ## isEmail  Methods
 ### Definition
 - Check if the email the user entered is in email format or not
 ### Validator.isEmail = function (selector, message) {}
 #### Parameter
 - **selector** : string
-   - css selector of the field to check\
+   - css selector of the field to check
 - **message** : string
    - error message will be appended to the error element
 ## minLength Methods
@@ -240,9 +240,9 @@ Otherwise, the form will be submitted according to the method and action declare
 ### Validator.minLength = function (selector, min, message) {}
 #### Parameter
 - **selector** : string
-  - css selector of the field to check\
+  - css selector of the field to check
 - **min**: number
-  - minimum length of string\
+  - minimum length of string
 - **message** : string
   - error message will be appended to the error element
 ## maxLength Methods
@@ -251,68 +251,68 @@ Otherwise, the form will be submitted according to the method and action declare
 ### Validator.minLength = function (selector, max, message) {}
 #### Parameter
 - **selector** : string
-- css selector of the field to check\
+    - css selector of the field to check
 - **max**: number
-- maximum length of string\
+    - maximum length of string
 - **message** : string
-- error message will be appended to the error element
+    - error message will be appended to the error element
 ## hasSpecialCharacter Methods
 ### Definition
 -   Check string has special characters or not
 ### Validator.hasSpecialCharacters = function(selector,message) {}
 #### Parameter
 - **selector** : string
-- css selector of the field to check\
+    - css selector of the field to check
 - **message** : string
-- error message will be appended to the error element
+    - error message will be appended to the error element
 ## hasNumber Methods
 ### Definition
 - Check if string has numeric characters or not
 ### Validator.hasNumber = function(selector,message) {}
 #### Parameter
 - **selector** : string
-- css selector of the field to check\
+    - css selector of the field to check
 - **message** : string
-- error message will be appended to the error element
+    - error message will be appended to the error element
 ## hasNumberOnly Methods
 ### Definition
 - Check if string is numeric or not
 ### Validator.hasNumberOnly = function(selector,allowDecimal=false,message) {}
 #### Parameter
 - **selector** : string
-- css selector of the field to check\
+    - css selector of the field to check
 - **allowDecimal** : boolean
-- Allowed decimal places. Default value is false.\
+    - Allowed decimal places. Default value is false.
 - **message** : string
-- error message will be appended to the error element
+    - error message will be appended to the error element
 ## hasUpperCase Methods
 ### Definition
 - Check for uppercase characters
 ### Validator.hasUpperCase = function(selector,only=false,message) {}
 #### Parameter
 - **selector** : string
-- css selector of the field to check\
+    - css selector of the field to check
 - **only** : boolean
-- Mark string with only uppercase characters\
+    - Mark string with only uppercase characters
 - **message** : string
-- error message will be appended to the error element
+    - error message will be appended to the error element
 ## hasLowerCaseOnly Methods
 ### Definition
 - Check string with only lowercase characters
 ### Validator.hasLowerCaseOnly = function(selector,message) {}
 #### Parameter
 - **selector** : string
-- css selector of the field to check\
+    - css selector of the field to check
 - **message** : string
-- error message will be appended to the error element\
+    - error message will be appended to the error element
 ## isConfirmed Methods
 ### Definition
 Compare the string with the value returned from a callback function
 ### Validator.isConfirmed = function (selector, getConfirmValue, message) {}
 #### Parameter
 - **selector** : string
-- css selector of the field to check\
+    - css selector of the field to check
 - **getConfirmValue** : function
-- callback function that will return the value in order to compare with selector value\
+    - callback function that will return the value in order to compare with selector value
 - **message** : string
-- error message will be appended to the error element
+    - error message will be appended to the error element
