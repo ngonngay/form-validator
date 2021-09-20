@@ -22,15 +22,15 @@ Source code from origin developer [F8-Học để đi làm](https://codepen.io/n
     - [rules](#rules)
     - [onSubmit](#onsubmit)
 - [Method](#rules-method)
-    - [isRequired](#isrequired)
-    - [isEmail](#isemail)
-    - [minLength](#minlength)
-    - [hasSpecialCharacter](#hasspecialcharacter)
-    - [hasNumber](#hasnumber)
-    - [hasNumberOnly](#hasnumberonly)
-    - [hasUpperCase](#hasuppercase)
-    - [hasLowerCaseOnly](#haslowercasecnly)
-    - [isConfirmed](#isconfirmed)
+    - [isRequired](#isrequired-methods)
+    - [isEmail](#isemail-methods)
+    - [minLength](#minlength-methods)
+    - [hasSpecialCharacter](#hasspecialcharacter-methods)
+    - [hasNumber](#hasnumber-methods)
+    - [hasNumberOnly](#hasnumberonly-methods)
+    - [hasUpperCase](#hasuppercase-methods)
+    - [hasLowerCaseOnly](#haslowercasecnly-methods)
+    - [isConfirmed](#isconfirmed-methods)
 # Getting Started
 Install Validator
 Clone Code from github 
@@ -180,16 +180,16 @@ Predefined rules:
 
 | Rule               | Meaning                                        |
 | -------------------------- | ---------------------------------------------- |
-| [isRequired](#isrequired)               | required a filed not empty                    |
-| [isEmail](#isemail)  | validate email format              |
-| [minLength](#minlength)      | min length of the target  |
-| [maxLength](#maxlength)      | max length of the target  |
-| [hasSpecialCharacter](#hasspecialcharacter)              | has special characters                   |
-| [hasNumber](#hasnumber)               | has number                               |
-| [hasNumberOnly](#hasnumberonly)               | has number                               |
-| [hasUpperCase](#hasuppercase)          | has uppercase   or only upper case                     |
-| [hasLowerCaseOnly](#haslowercasecnly)             | has lowercase only                         |
-| [isConfirmed](#isconfirmed)               | compare 2 values                            |
+| [isRequired](#isrequired-methods)               | required a filed not empty                    |
+| [isEmail](#isemail-methods)  | validate email format              |
+| [minLength](#minlength-methods)      | min length of the target  |
+| [maxLength](#maxlength-methods)      | max length of the target  |
+| [hasSpecialCharacter](#hasspecialcharacter-methods)              | has special characters                   |
+| [hasNumber](#hasnumber-methods)               | has number                               |
+| [hasNumberOnly](#hasnumberonly-methods)               | has number                               |
+| [hasUpperCase](#hasuppercase-methods)          | has uppercase   or only upper case                     |
+| [hasLowerCaseOnly](#haslowercasecnly-methods)             | has lowercase only                         |
+| [isConfirmed](#isconfirmed-methods)               | compare 2 values                            |
 
 
 #### onSubmit
