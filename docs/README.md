@@ -231,20 +231,20 @@ Otherwise, the form will be submitted according to the method and action declare
 ### Validator.isEmail = function (selector, message) {}
 #### Parameter
    **selector** : string\
-> css selector of the field to check\
+   > css selector of the field to check\
    **message** : string\
-> error message will be appended to the error element
+   > error message will be appended to the error element
 ## minLength Methods
 ### Definition
 - Check minimum length of string
 ### Validator.minLength = function (selector, min, message) {}
 #### Parameter
- **selector** : string\
-> css selector of the field to check\
-**min**: number\
-> minimum length of string\
-**message** : string\
-> error message will be appended to the error element
+  **selector** : string\
+  > css selector of the field to check\
+  **min**: number\
+  > minimum length of string\
+  **message** : string\
+  > error message will be appended to the error element
 ## maxLength Methods
 ### Definition
 - Check maximum length of string
