@@ -163,6 +163,14 @@ Validator.minLength = function (selector, min, message) {
         }
     };
 }
+Validator.minLength = function (selector, max, message) {
+    return {
+        selector: selector,
+        test: function (value) {
+            return value.length <= max ? undefined :  message || `Vui lòng nhập tối thiểu ${max} kí tự`;
+        }
+    };
+}
 Validator.hasSpecialCharacters = function(selector,message) {
     return {
         selector: selector,

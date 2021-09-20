@@ -17,7 +17,7 @@ Source code from origin developer [F8-Học để đi làm](https://codepen.io/n
 - [Getting started](#getting-started)
 - [Arguments](#arguments)
     - [form](#form)
-    - [formGroupSelector](#formsroupselector)
+    - [formGroupSelector](#formgroupselector)
     - [errorSelector](#errorselector)
     - [rules](#rules)
     - [onSubmit](#onsubmit)
@@ -162,7 +162,7 @@ Validator({
   =>  errorSelector:'.form-message',
 })
 ```
-**rules** 
+#### rules
 This parameter specifies the rules to be applied to validate the data field\
 A data field can have many rules, for example 'email' has rules like required, isEmail,....
 ```
@@ -180,23 +180,24 @@ Predefined rules:
 
 | Rule               | Meaning                                        |
 | -------------------------- | ---------------------------------------------- |
-| isRequired               | required a filed not empty                    |
-| isEmail  | validate email format              |
-| minLength      | min length of the target  |
-| hasSpecialCharacter              | has special characters                   |
-| hasNumber               | has number                               |
-| hasNumberOnly               | has number                               |
-| hasUpperCase             | has uppercase   or only upper case                     |
-| hasLowerCaseOnly             | has lowercase only                         |
-| isConfirmed               | compare 2 values                            |
+| [isRequired](#isrequired)               | required a filed not empty                    |
+| [isEmail](#isemail)  | validate email format              |
+| [minLength](#minlength)      | min length of the target  |
+| [maxLength](#maxlength)      | max length of the target  |
+| [hasSpecialCharacter](#hasspecialcharacter)              | has special characters                   |
+| [hasNumber](#hasnumber)               | has number                               |
+| [hasNumberOnly](#hasnumberonly)               | has number                               |
+| [hasUpperCase](#hasuppercase)          | has uppercase   or only upper case                     |
+| [hasLowerCaseOnly](#haslowercasecnly)             | has lowercase only                         |
+| [isConfirmed](#isconfirmed)               | compare 2 values                            |
 
 
-**onSubmit** 
+#### onSubmit
 Is an optional callback function\
 This callback will be called when the user clicks on the register button to submit the form\
 When the form is submitted, all the rules will be validated\
 If you pass a callback to onSubmit, the validator will stop the submit event and return the entered data object\
-Otherwise, the form will be submitted according to the method and action declared on the form\
+Otherwise, the form will be submitted according to the method and action declared on the form
 ```
  Validator({
             form: '#form-1',
@@ -215,12 +216,45 @@ Otherwise, the form will be submitted according to the method and action declare
 ```
 # Rules Methods
  Predefined rules:
-# isRequired
-# isEmail 
-# minLength
-# hasSpecialCharacter
-# hasNumber
-# hasNumberOnly
-# hasUpperCase
-# hasLowerCaseOnly
-# isConfirmed
+## isRequired
+### Definition
+- Require users not to leave this field blank
+### Validator.isRequired = function (selector, message) {}
+#### Parameter
+    selector : 
+## isEmail 
+### Definition
+###
+#### Parameter
+## minLength
+### Definition
+###
+#### Parameter
+## maxLength
+### Definition
+###
+#### Parameter
+## hasSpecialCharacter
+### Definition
+###
+#### Parameter
+## hasNumber
+### Definition
+###
+#### Parameter
+## hasNumberOnly
+### Definition
+###
+#### Parameter
+## hasUpperCase
+### Definition
+###
+#### Parameter
+## hasLowerCaseOnly
+### Definition
+###
+#### Parameter
+## isConfirmed
+### Definition
+###
+#### Parameter
