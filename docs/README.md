@@ -100,7 +100,7 @@ Done.
 | **rules** (*)              | Validate rule for data field                   |
 | **onSubmit**               | Callback function                              |
   
-
+  **(*) is required**
 #### form
 We have form here : 
 ```
@@ -116,3 +116,49 @@ Validator({
 ```
 **Dont forget * # * (for id) and * . * (for class name ) when pass argument**\
 **Dont forget this *{ }* when pass argument !**
+#### formGroupSelector
+This parameter specifies which element the form-group is\
+```
+    <div class="form-group">
+        <label for="email" class="form-label">Email</label>
+        <input id="email" name="email" type="text" placeholder="VD: email@domain.com" class="form-control">
+        <span class="form-message"></span>
+    </div>
+```
+When pass Like:
+```
+Validator({
+    form :"#form-id",
+    formGroupSelector: 'form-group',
+})
+```
+#### errorSelector
+This parameter specifies which element display error message is\
+```
+    <div class="form-group">
+        <label for="email" class="form-label">Email</label>
+        <input id="email" name="email" type="text" placeholder="VD: email@domain.com" class="form-control">
+       => <span class="form-message"></span>
+    </div>
+```
+When pass Like:
+```
+Validator({
+    form :"#form-id",
+    formGroupSelector: 'form-group',
+    errorSelector:'.form-message',
+})
+```
+**rules** 
+This parameter specifies the rules to be applied to validate the data field\
+A data field can have many rules, for example 'email' has rules like required, isEmail,....\
+Predefined rules:\
+
+| Rule               | Meaning                                        |
+| -------------------------- | ---------------------------------------------- |
+| isRequired               | required a filed not empty                    |
+| isEmail  | validate email format              |
+| minLength      | min length of the target  |
+| hasSpecialCharacter              | has special characters                   |
+| hasNumber               | has number                               |
+| isConfirmed               | compare 2 values                            |
