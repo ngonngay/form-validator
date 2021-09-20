@@ -62,8 +62,8 @@ Your form should follow this format :
         <span class="form-message"></span>
     </div>
 ```
-- For error messages, the program appends the error message in the element passed as an argument by the constructor
-Link js file to your index.html and call library
+- For error messages, the program appends the error message in the element passed as an argument by the constructor.
+- Link js file to your index.html and call library
 ``` <script src="./validator.js"></script>
       <script >
           Validator({
