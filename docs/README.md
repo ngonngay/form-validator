@@ -230,9 +230,9 @@ Otherwise, the form will be submitted according to the method and action declare
 - Check if the email the user entered is in email format or not
 ### Validator.isEmail = function (selector, message) {}
 #### Parameter
-   **selector** : string\
+   **selector** : string
    > css selector of the field to check\
-   **message** : string\
+   **message** : string
    > error message will be appended to the error element
 ## minLength Methods
 ### Definition
