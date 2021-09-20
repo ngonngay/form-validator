@@ -221,40 +221,79 @@ Otherwise, the form will be submitted according to the method and action declare
 - Require users not to leave this field blank
 ### Validator.isRequired = function (selector, message) {}
 #### Parameter
-    selector : 
+    **selector** : string
+    > css selector of the field to check
+    **message** : string
+    > error message will be appended to the error element
 ## isEmail 
 ### Definition
 ###
 #### Parameter
+ **selector** : string
+    > css selector of the field to check
+    **message** : string
+    > error message will be appended to the error element
 ## minLength
 ### Definition
 ###
 #### Parameter
+ **selector** : string
+    > css selector of the field to check
+    **message** : string
+    > error message will be appended to the error element
 ## maxLength
 ### Definition
 ###
 #### Parameter
+ **selector** : string
+    > css selector of the field to check
+    **message** : string
+    > error message will be appended to the error element
 ## hasSpecialCharacter
 ### Definition
 ###
 #### Parameter
+ **selector** : string
+    > css selector of the field to check
+    **message** : string
+    > error message will be appended to the error element
 ## hasNumber
 ### Definition
 ###
 #### Parameter
+ **selector** : string
+    > css selector of the field to check
+    **message** : string
+    > error message will be appended to the error element
 ## hasNumberOnly
 ### Definition
 ###
 #### Parameter
+ **selector** : string
+    > css selector of the field to check
+    **message** : string
+    > error message will be appended to the error element
 ## hasUpperCase
 ### Definition
 ###
 #### Parameter
+ **selector** : string
+    > css selector of the field to check
+    **message** : string
+    > error message will be appended to the error element
 ## hasLowerCaseOnly
 ### Definition
 ###
 #### Parameter
+    **selector** : string
+    > css selector of the field to check
+    **message** : string
+    > error message will be appended to the error element
 ## isConfirmed
 ### Definition
 ###
 #### Parameter
+    **selector** : string
+    > css selector of the field to check
+    **message** : string
+    > error message will be appended to the error element
