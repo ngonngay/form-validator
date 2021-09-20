@@ -1,4 +1,15 @@
-# Validator for form validation.Ư
+# This is small library for form validation.
+> Created by developer network of F8 community
+## Supported: 
+- input[type='text']
+- input[type='password']
+- input[type='file']
+- input[type='radio']
+- input[type='checkbox']
+- input[type='email']
+- select
+
 
 #### Source 
-Source code đến từ nhà phát triển gốc [F8-Học để đi làm](https://codepen.io/ng-ngc-sn-the-bashful/pen/wvMNzKP)
+Source code from origin developer [F8-Học để đi làm](https://codepen.io/ng-ngc-sn-the-bashful/pen/wvMNzKP)
+
